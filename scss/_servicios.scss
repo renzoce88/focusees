@@ -1,0 +1,78 @@
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+
+  h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    border-bottom: solid rgba(163, 163, 163, 0.377) 0.1px;
+  }
+
+
+  .cards {
+    background: #ffffff;
+    border: 1px solid rgba(226, 226, 226, 0.452);
+    box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(6px);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 30px 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    h3 {
+      color: rgb(0, 0, 0);
+    }
+
+    p {
+      text-align: center;
+      text-justify: newspaper;
+      color: rgb(0, 0, 0);
+    }
+  }
+
+}
+
+// animaciones
+
+.broadcast {
+  background-color: black;
+  box-sizing: border-box;
+  margin: 1rem auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.broadcastContent {
+  animation: scrolling 40s infinite linear;
+  color: #E0E0E0;
+  transform: translateX(100%);
+
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+@keyframes scrolling {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

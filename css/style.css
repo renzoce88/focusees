@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(241, 241, 241, 0.26);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 550px;
+  padding: 0 0.8rem;
+  height: 9vh;
+}
+header p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+header .abrir-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.918);
+  border: solid 0.1px rgba(128, 128, 128, 0.199);
+  z-index: 1;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px;
+  margin: auto;
+  gap: 10px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hiddenButton {
+  visibility: hidden;
+}
+
+main {
+  height: 50vh;
+  padding: 0 8px;
+  margin-top: 100px;
+}
+main h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.6rem;
+  margin: auto;
+  margin-top: 50px;
+  line-height: 4.6rem;
+}
+main .negritaTitulo {
+  font-weight: 600;
+}
+main p {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+section h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  border-bottom: solid rgba(163, 163, 163, 0.377) 0.1px;
+}
+section .cards {
+  background: #ffffff;
+  border: 1px solid rgba(226, 226, 226, 0.452);
+  box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.11);
+  backdrop-filter: blur(6px);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 30px 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+section .cards h3 {
+  color: rgb(0, 0, 0);
+}
+section .cards p {
+  text-align: center;
+  text-justify: newspaper;
+  color: rgb(0, 0, 0);
+}
+
+.broadcast {
+  background-color: black;
+  box-sizing: border-box;
+  margin: 1rem auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.broadcastContent {
+  animation: scrolling 40s infinite linear;
+  color: #E0E0E0;
+  transform: translateX(100%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+@keyframes scrolling {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+button {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Inter";
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+button:hover,
+button:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+button:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+footer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+  }
+  header p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+  }
+  header .abrir-menu {
+    display: none;
+  }
+  header nav {
+    position: initial;
+    visibility: visible;
+    border: initial;
+    background-color: initial;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+    gap: 10px;
+  }
+  header nav ul .cerra-menu {
+    display: none;
+  }
+  header nav ul li {
+    list-style-type: none;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+  main {
+    margin: auto;
+    margin-top: 150px;
+    max-width: 1200px;
+  }
+  section {
+    margin: auto;
+    max-width: 1200px;
+  }
+  section .seccionServiciosInt {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  section .seccionServiciosInt .serviciosInt {
+    gap: 10px;
+    width: 50%;
+  }
+  section .seccionServiciosInt .serviciosInt .cards {
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 50%;
+  }
+  section .seccionServiciosInt .serviciosInt .cards button {
+    margin: 10px 0;
+  }
+  section .seccionServiciosInt .serviciosCards {
+    gap: 10px;
+    width: 50%;
+  }
+  section .seccionServiciosInt .serviciosCards .cards {
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 50%;
+  }
+  section .seccionServiciosInt .serviciosCards .cards button {
+    margin: 10px 0;
+  }
+  .trabajos {
+    margin-top: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

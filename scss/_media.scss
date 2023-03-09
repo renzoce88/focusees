@@ -1,0 +1,120 @@
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 1200px;
+
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.8rem;
+        }
+
+        .abrir-menu {
+            display: none;
+        }
+
+
+        nav {
+            position: initial;
+            visibility: visible;
+            border: initial;
+            background-color: initial;
+
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: auto;
+                gap: 10px;
+
+                .cerra-menu {
+                    display: none;
+                }
+
+                li {
+
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 1.6rem;
+
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    main {
+        margin: auto;
+        margin-top: 150px;
+        max-width: 1200px;
+    }
+
+    section {
+
+        margin: auto;
+        max-width: 1200px;
+
+
+        .seccionServiciosInt {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .serviciosInt {
+                gap: 10px;
+                width: 50%;
+
+
+                .cards {
+                    justify-content: space-between;
+                    padding: 0 15px;
+                    height: 50%;
+
+                    button {
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+            .serviciosCards {
+                gap: 10px;
+                width: 50%;
+
+                .cards {
+                    justify-content: space-between;
+                    padding: 0 15px;
+                    height: 50%;
+
+                    button {
+                        margin: 10px 0;
+                    }
+                }
+
+            }
+
+        }
+
+
+
+
+    }
+
+    .trabajos{
+        margin-top: 100px;
+    }
+}
