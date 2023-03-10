@@ -76,3 +76,46 @@ section {
     transform: translateX(-100%);
   }
 }
+
+.marquees-wrapper {
+  --marquee-text-size: 4rem;
+  position: relative;
+  height: calc(8 * var(--marquee-text-size));
+  /* 8 line of text * font-size*/
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.marquee {
+  --gap: 1rem;
+  display: flex;
+  gap: var(--gap);
+  overflow: hidden;
+  user-select: none;
+  color: 0000;
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+}
+.scroll {
+  animation: scroll 200s linear infinite;
+}
+
+.marquee:nth-child(even) .scroll {
+  animation-direction: reverse;
+}
+/* ANIMATION */
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
