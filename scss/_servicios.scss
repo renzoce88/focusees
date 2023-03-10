@@ -81,7 +81,6 @@ section {
   --marquee-text-size: 4rem;
   position: relative;
   height: calc(8 * var(--marquee-text-size));
-  /* 8 line of text * font-size*/
   width: 100%;
   overflow-x: hidden;
 }
@@ -109,7 +108,6 @@ section {
 .marquee:nth-child(even) .scroll {
   animation-direction: reverse;
 }
-/* ANIMATION */
 
 @keyframes scroll {
   from {

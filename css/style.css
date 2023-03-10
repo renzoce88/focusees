@@ -168,7 +168,6 @@ section .cards p {
   --marquee-text-size: 4rem;
   position: relative;
   height: calc(8 * var(--marquee-text-size));
-  /* 8 line of text * font-size*/
   width: 100%;
   overflow-x: hidden;
 }
@@ -198,7 +197,6 @@ section .cards p {
   animation-direction: reverse;
 }
 
-/* ANIMATION */
 @keyframes scroll {
   from {
     transform: translateX(0);
