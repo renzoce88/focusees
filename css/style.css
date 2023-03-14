@@ -13,6 +13,74 @@ body {
   background-color: rgba(241, 241, 241, 0.26);
 }
 
+.broadcast {
+  background-color: black;
+  box-sizing: border-box;
+  margin: 1rem auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.broadcastContent {
+  animation: scrolling 40s infinite linear;
+  color: #E0E0E0;
+  transform: translateX(100%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+@keyframes scrolling {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.marquees-wrapper {
+  --marquee-text-size: 4rem;
+  position: relative;
+  height: calc(8 * var(--marquee-text-size));
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.marquee {
+  --gap: 1rem;
+  display: flex;
+  gap: var(--gap);
+  overflow: hidden;
+  user-select: none;
+  color: 0;
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+}
+
+.scroll {
+  animation: scroll 200s linear infinite;
+}
+
+.marquee:nth-child(even) .scroll {
+  animation-direction: reverse;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -137,74 +205,6 @@ section .cards p {
   color: rgb(0, 0, 0);
 }
 
-.broadcast {
-  background-color: black;
-  box-sizing: border-box;
-  margin: 1rem auto;
-  overflow: hidden;
-  width: 100%;
-}
-
-.broadcastContent {
-  animation: scrolling 40s infinite linear;
-  color: #E0E0E0;
-  transform: translateX(100%);
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 3rem;
-}
-
-@keyframes scrolling {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-.marquees-wrapper {
-  --marquee-text-size: 4rem;
-  position: relative;
-  height: calc(8 * var(--marquee-text-size));
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.marquee {
-  --gap: 1rem;
-  display: flex;
-  gap: var(--gap);
-  overflow: hidden;
-  user-select: none;
-  color: 0;
-}
-
-.marquee__content {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-around;
-  min-width: 100%;
-  gap: var(--gap);
-}
-
-.scroll {
-  animation: scroll 200s linear infinite;
-}
-
-.marquee:nth-child(even) .scroll {
-  animation-direction: reverse;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
-}
 button {
   background-color: #e1ecf4;
   border-radius: 3px;
