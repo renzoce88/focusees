@@ -124,7 +124,9 @@
 
     <section>
         <h2>Contacto</h2>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe6rcI20f3pbCIhDO1UpfnqRjbhY7KBK5ZZtXpD9J0Gl2Lz9g/formResponse">
+        <script type="text/javascript">var submitted=false</script>
+        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='html/submission.html';}"></iframe>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe6rcI20f3pbCIhDO1UpfnqRjbhY7KBK5ZZtXpD9J0Gl2Lz9g/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
             <label for="entry.2005620554">Nombre</label>
             <input type="text" name="entry.2005620554" placeholder="Nombre y apellido">
             <label for="entry.1045781291">Correo</label>
