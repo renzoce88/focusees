@@ -114,7 +114,30 @@
 
     }
 
-    .trabajos{
+    .trabajos {
         margin-top: 100px;
+    }
+
+    .formulario {
+        padding: 10px 20px;
+        background: #f4f7f8;
+        border-radius: 8px;
+
+        .grupo1datosForm{
+            display: flex;
+        }
+        .grupo2datosForm{
+            display: flex;
+        }
+    
+         
+        label {
+
+            margin-bottom: 8px;
+            font-family: 'Inter';
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
     }
 }

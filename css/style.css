@@ -180,12 +180,12 @@ section .cards p {
 }
 
 button {
-  background-color: #e1ecf4;
+  background-color: #002e92;
   border-radius: 3px;
-  border: 1px solid #7aa7c7;
+  border: 1px solid #dbdbdb;
   box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
   box-sizing: border-box;
-  color: #39739d;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: "Inter";
@@ -319,6 +319,80 @@ footer {
   .trabajos {
     margin-top: 100px;
   }
+  .formulario {
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+  .formulario .grupo1datosForm {
+    display: flex;
+  }
+  .formulario .grupo2datosForm {
+    display: flex;
+  }
+  .formulario label {
+    margin-bottom: 8px;
+    font-family: "Inter";
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+.formulario {
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+.formulario .grupo1form {
+  display: flex;
+  flex-direction: column;
+}
+.formulario .grupo1form .grupo1datosForm {
+  gap: 10px;
+}
+.formulario .grupo1form .grupo1datosForm .nombreApellido {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.formulario .grupo1form .grupo1datosForm .eMail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.formulario .grupo1form .grupo2datosForm {
+  gap: 10px;
+}
+.formulario .grupo1form .grupo2datosForm .direccion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.formulario .grupo1form .grupo2datosForm .numeroTelefono {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+label {
+  display: inline-flex;
+  margin-bottom: 8px;
+  font-family: "Inter";
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
