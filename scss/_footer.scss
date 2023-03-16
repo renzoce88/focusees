@@ -1,4 +1,10 @@
 footer {
+    margin: auto;
+    max-width: 1200px;
+    margin-top: 100px;
+
+
+    border-top: solid rgba(163, 163, 163, 0.377) 0.1px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
@@ -10,3 +16,5 @@ footer {
     flex-direction: column;
     align-items: end;
 }
+
+
