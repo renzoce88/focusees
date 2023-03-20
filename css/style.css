@@ -335,55 +335,84 @@ section .sectionTrabajo .imag {
   .trabajos {
     margin-top: 100px;
   }
-  .formulario {
+  .bloqueContacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .bloqueContacto .mensajeFormulario p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .bloqueContacto .mensajeFormulario p .spanResaltar {
+    font-weight: 600;
+    color: #0a5aa3;
+  }
+  .bloqueContacto .formulario {
     padding: 10px 20px;
     background: #f4f7f8;
     border-radius: 8px;
   }
-  .formulario .grupo1datosForm {
+  .bloqueContacto .formulario .grupo1datosForm {
     display: flex;
   }
-  .formulario .grupo2datosForm {
+  .bloqueContacto .formulario .grupo2datosForm {
     display: flex;
   }
-  .formulario label {
+  .bloqueContacto .formulario label {
     margin-bottom: 8px;
     font-family: "Inter";
     font-size: 1.8rem;
     font-weight: 500;
   }
 }
-.formulario {
+.ocultarContacto {
+  display: none;
+}
+
+.bloqueContacto .mensajeFormulario p {
+  padding: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+}
+.bloqueContacto .mensajeFormulario p .spanResaltar {
+  font-weight: 600;
+  color: #0a5aa3;
+}
+.bloqueContacto .formulario {
   padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
 }
-.formulario .grupo1form {
+.bloqueContacto .formulario .grupo1form {
   display: flex;
   flex-direction: column;
 }
-.formulario .grupo1form .grupo1datosForm {
+.bloqueContacto .formulario .grupo1form .grupo1datosForm {
   gap: 10px;
 }
-.formulario .grupo1form .grupo1datosForm .nombreApellido {
+.bloqueContacto .formulario .grupo1form .grupo1datosForm .nombreApellido {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.formulario .grupo1form .grupo1datosForm .eMail {
+.bloqueContacto .formulario .grupo1form .grupo1datosForm .eMail {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.formulario .grupo1form .grupo2datosForm {
+.bloqueContacto .formulario .grupo1form .grupo2datosForm {
   gap: 10px;
 }
-.formulario .grupo1form .grupo2datosForm .direccion {
+.bloqueContacto .formulario .grupo1form .grupo2datosForm .direccion {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.formulario .grupo1form .grupo2datosForm .numeroTelefono {
+.bloqueContacto .formulario .grupo1form .grupo2datosForm .numeroTelefono {
   display: flex;
   flex-direction: column;
   width: 100%;

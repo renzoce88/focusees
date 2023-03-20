@@ -118,26 +118,50 @@
         margin-top: 100px;
     }
 
-    .formulario {
-        padding: 10px 20px;
-        background: #f4f7f8;
-        border-radius: 8px;
+    .bloqueContacto {
+        display: flex;
+        flex-direction: column;
 
-        .grupo1datosForm{
-            display: flex;
-        }
-        .grupo2datosForm{
-            display: flex;
-        }
-    
-         
-        label {
+        .mensajeFormulario {
 
-            margin-bottom: 8px;
-            font-family: 'Inter';
-            font-size: 1.8rem;
-            font-weight: 500;
+            p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+
+                .spanResaltar {
+                    font-weight: 600;
+                    color: #0a5aa3;
+                }
+            }
+
         }
 
+
+        .formulario {
+            padding: 10px 20px;
+            background: #f4f7f8;
+            border-radius: 8px;
+
+
+            .grupo1datosForm {
+                display: flex;
+            }
+
+            .grupo2datosForm {
+                display: flex;
+            }
+
+
+            label {
+
+                margin-bottom: 8px;
+                font-family: 'Inter';
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+
+        }
     }
 }

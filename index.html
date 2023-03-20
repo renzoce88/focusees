@@ -145,40 +145,45 @@
     </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
-        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"
-            onload="if(submitted){window.location='html/submission.html';}"></iframe>
-        <form class="formulario"
-            action="https://docs.google.com/forms/d/e/1FAIpQLSe6rcI20f3pbCIhDO1UpfnqRjbhY7KBK5ZZtXpD9J0Gl2Lz9g/formResponse"
-            method="post" target="hiddenConfirm" onsubmit="submitted=true">
-            <div class="grupo1form">
-                <div class="grupo1datosForm">
-                    <div class="nombreApellido">
-                        <label for="entry.2005620554">Nombre y Apellido</label>
-                        <input type="text" name="entry.2005620554" placeholder="Nombre y apellido">
+        <h2 class="ocultarContacto">Contacto</h2>
+        <div class="bloqueContacto">
+            <div class="mensajeFormulario">
+                <p><span class="spanResaltar">Hagamos contacto!</span> Te damos una solucion a tu problema</p>
+            </div>
+            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"
+                onload="if(submitted){window.location='html/submission.html';}"></iframe>
+            <form class="formulario"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSe6rcI20f3pbCIhDO1UpfnqRjbhY7KBK5ZZtXpD9J0Gl2Lz9g/formResponse"
+                method="post" target="hiddenConfirm" onsubmit="submitted=true">
+                <div class="grupo1form">
+                    <div class="grupo1datosForm">
+                        <div class="nombreApellido">
+                            <label for="entry.2005620554">Nombre y Apellido</label>
+                            <input type="text" name="entry.2005620554" placeholder="Nombre y apellido">
+                        </div>
+                        <div class="eMail">
+                            <label for="entry.1045781291">Correo electronico</label>
+                            <input type="text" name="entry.1045781291" placeholder="ejemplo@ejemplo.com">
+                        </div>
                     </div>
-                    <div class="eMail">
-                        <label for="entry.1045781291">Correo electronico</label>
-                        <input type="text" name="entry.1045781291" placeholder="ejemplo@ejemplo.com">
+                    <div class="grupo2datosForm">
+                        <div class="direccion">
+                            <label for="entry.1065046570">Direccion</label>
+                            <input type="text" name="entry.1065046570" placeholder="siempre viva 245 EEUU">
+                        </div>
+                        <div class="numeroTelefono">
+                            <label for="entry.1166974658">Numero de contacto</label>
+                            <input type="text" name="entry.1166974658" placeholder="54 11 156230564">
+                        </div>
                     </div>
                 </div>
-                <div class="grupo2datosForm">
-                    <div class="direccion">
-                        <label for="entry.1065046570">Direccion</label>
-                        <input type="text" name="entry.1065046570" placeholder="siempre viva 245 EEUU">
-                    </div>
-                    <div class="numeroTelefono">
-                        <label for="entry.1166974658">Numero de contacto</label>
-                        <input type="text" name="entry.1166974658" placeholder="54 11 156230564">
-                    </div>
+                <div class="comentarios">
+                    <label for="entry.839337160">Comentarios</label>
+                    <input type="text" name="entry.839337160" placeholder="Comentarios">
                 </div>
-            </div>
-            <div class="comentarios">
-                <label for="entry.839337160">Comentarios</label>
-                <input type="text" name="entry.839337160" placeholder="Comentarios">
-            </div>
-            <button type="submit">Enviar formulario</button>
-        </form>
+                <button type="submit">Enviar formulario</button>
+            </form>
+        </div>
     </section>
 
     <footer>Rnc desarrollo</footer>
