@@ -1,0 +1,18 @@
+section {
+
+    .sectionTrabajo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 45px 10px;
+
+
+        .imag {
+            padding: 10px;
+            width: 100%;
+        }
+    }
+
+
+}

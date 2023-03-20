@@ -237,6 +237,18 @@ footer {
   align-items: end;
 }
 
+section .sectionTrabajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 10px;
+}
+section .sectionTrabajo .imag {
+  padding: 10px;
+  width: 100%;
+}
+
 @media screen and (min-width: 600px) {
   header {
     display: flex;
